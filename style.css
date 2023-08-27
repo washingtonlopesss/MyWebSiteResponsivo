@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Phudu:wght@900&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 2vh;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+h1 {
+    width: 90%;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Phudu', cursive;
+    font-size: 5vw;
+    color: #f3f3f3;
+}
+
+@keyframes myAnimation {
+    to {
+        width: 100%;
+    }
+    from {
+        width: 0px;
+    }
+}
+
+#title::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #f3f3f3;
+    animation: myAnimation infinite 5s;
+}
+
+#containerTitle {
+    background-color: #000000;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+#containerLogin {
+    display: flex;
+    align-items: center;
+    background-image: url(background.jpg);
+    width: 50vw;
+    height: 100vh;
+}
+
+#formLogin {
+    display: block;
+    width: 65%;
+    min-width: 300px;
+    background-color: #000000;
+    border-radius: 5px;
+    padding: 35px;
+}
+
+input, label{
+    display: block;
+    width: 95%;
+    color: #f3f3f3;
+    margin: 10px auto;
+}
+
+input{
+    padding: 5px;
+    height: 5vh;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
+#buttons {
+    display: block;
+    width: 95%;
+}
+
+button {
+    max-width: 500px;
+    width: 100%;
+    height: 5vh;
+    margin-bottom: 10px;
+}
+
+#enter {
+    background-color: #0005DC;
+}
+
+a {
+    display: block;
+    max-width: 95%;
+    margin: 10px auto; 
+    color: #107cd4;
+}
+
+@media(max-width: 950px) {
+    input, button {
+        height: 30px;
+    }
+    #containerTitle {
+        display: none;
+    }
+    #containerLogin {
+        width: 100vw;
+    }
+}
+
+@media(max-width: 500px) {
+    #containerTitle {
+        display: none;
+    }
+    #containerLogin {
+        width: 100vw;
+        background-image: none;
+        background-color: #000000;
+    }
+}
