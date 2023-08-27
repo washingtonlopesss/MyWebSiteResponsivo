@@ -123,4 +123,7 @@ a {
         background-image: none;
         background-color: #000000;
     }
+    #formLogin {
+        width: 100%;
+    }
 }
